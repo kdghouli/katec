@@ -1,30 +1,45 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+
+<nav-bar />
+<div class="container">
+    <div class="row">
+      
+      <div class="col-9">
+
+         <router-view />
+
+      </div>
+       <div class="col-3">
+
+         <side-bar />
+
+      </div>
+      
+
+</div>
+<div class="row">
+  <pooter/>
+</div>
+</div>
+
+
+
+ 
+ 
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
+<script>
+import NavBar from "@/components/page/NavBar.vue";
+import SideBar from "@/components/page/SideBar.vue";
+import Pooter from "@/components/page/Pooter.vue";
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  name: "App",
+  components: {
+    NavBar,
+    SideBar,
+    Pooter,
+  },
+};
+</script>
