@@ -82,7 +82,7 @@ export default {
 
   methods: {
     async getDonne() {
-      await this.axios.get("http://localhost:5000/camion?_embed=comments").then((resp) => {
+      await this.axios.get("http://localhost:5000/camion?_embed=comment").then((resp) => {
         this.camions = resp.data;
       });
       console.log(this.camions);

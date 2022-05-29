@@ -59,8 +59,8 @@ export default {
         return {
             url: `http://localhost:5000/camion/${this.id}`,
             camion: {
-                Matricule: '',
-                Marque: '',
+            matricule: '',
+                marque: '',
                 agenceId: '',
                 etat: ''
             },
@@ -80,7 +80,7 @@ export default {
                 active: this.active
             };
 
-            fetch('http://localhost:5000/comments', {
+            fetch('http://localhost:5000/comment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(comment)

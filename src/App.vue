@@ -1,19 +1,11 @@
 <template>
 
-<nav-bar />
+
 <div class="container">
     <div class="row">
+      <nav-bar />
       
-      <div class="col-9">
-
          <router-view />
-
-      </div>
-       <div class="col-3">
-
-         <side-bar />
-
-      </div>
       
 
 </div>
@@ -43,3 +35,30 @@ export default {
   },
 };
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background: linear-gradient(165deg, rgba(172,172,172,0.8183473218388918) 0%, rgba(0,234,255,1) 100%);
+}
+
+</style>

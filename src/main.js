@@ -6,7 +6,7 @@ import 'normalize.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-//import "bootswatch/dist/sketchy/bootstrap.min.css";
+//import revol
 
 
 
@@ -16,7 +16,7 @@ import VueAxios from 'vue-axios';
 
 
 createApp(App)
-.use(store)
-.use(router)
-.use(VueAxios, axios)
-.mount('#app');
+  .use(router)
+  .use(store)
+  .use(VueAxios, axios)
+  .mount('#app')

@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Camion from "../views/vhl/Camion.vue";
 import Voiture from "../views/vhl/Voiture.vue";
 import Scooter from "../views/vhl/Scooter.vue";
+import Chariot from "../views/vhl/Chariot.vue";
 import Creation from "../views/vhl/Creation.vue";
 import Show from "../views/vhl/Show.vue";
 import Edit from "../views/vhl/Update.vue";
@@ -29,6 +30,11 @@ const routes = [
     path: "/scooter",
     name: "scooter",
     component: Scooter,
+  },
+  {
+    path: "/chariots",
+    name: "chariot",
+    component: Chariot,
   },
   {
     path: '/new',

@@ -4,12 +4,12 @@
 
     <div class="bg-gradient rounded-3 p-1 text-white shadow "
         :class="{ 'bg-success': !toggle, 'bg-warning': toggle, 'bg-danger': vhl.etat === 'EN PANNE' }">
-        <h4 @click="toggle = !toggle" class="fw-bold"> {{ vhl.Matricule }} </h4>
+        <h4 @click="toggle = !toggle" class="fw-bold"> {{ vhl.matricule }} </h4>
 
 
-        <span class="text-dark">{{ vhl.Marque }}</span>
-        <p class="lead" v-if="toggle">{{ vhl.Agence }}</p>
-        <p class="lead" v-if="toggle">{{ vhl.Intitule }}</p>
+        <span class="text-dark">{{ vhl.marque }}</span>
+        <p class="lead" v-if="toggle">{{ vhl.agence }}</p>
+        <p class="lead" v-if="toggle">{{ vhl.intitule }}</p>
 
         <div class="my-4">
 
@@ -19,7 +19,7 @@
             <router-link :to="{ name: 'vhl-reclam', params: { id: vhl.id } }" class="btn btn-sm btn-danger ml-2">Reclam
             </router-link>
             <hr>
-            <span v-for='vl in vhl.comments' :key="vl">{{ vl.comment }} <br></span>
+            <span v-for='vl in vhl.comment' :key="vl">{{ vl.comment }} <br></span>
         </div>
     </div>
 
